@@ -7,7 +7,7 @@ echo $var3;
 /*
  * echo 'gettype(var): ';
  * echo gettype($s153) ;
-*echo '<br>var_dump(var): ';
+* echo '<br>var_dump(var): ';
 *var_dump($var1);
 */
 
