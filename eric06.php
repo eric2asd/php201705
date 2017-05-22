@@ -13,11 +13,19 @@
 //    echo 'E';
 //}
 
-$a = 10 ; $b = 3;
-if(--$a>=10 && $b++<=3)
-    echo "OK {$a}:{$b}";
+$a = 10;
+$b = 3;
+if (--$a >= 10 && $b++ <= 3)
+    echo "ex1：OK {$a}:{$b}";
 else
-    echo "XX {$a}:{$b}";
+    echo "ex1：XX {$a}:{$b}";
+echo "<br>";
+$c = 10;$d = 3;
+if (--$c >= 10 & $d++ <= 3)
+    echo "ex2：OK {$c}:{$d}";
+else
+    echo "ex2：XX {$c}:{$d}";
+
 
 
 

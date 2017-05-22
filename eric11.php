@@ -1,0 +1,24 @@
+<?php
+$a[0]=10;
+$a[7]=3;
+echo gettype($a).',';
+var_dump($a);
+echo count($a);
+echo '<hr>';
+$b[]=123;
+$b[]=12.3;
+$b[]=true;
+$b[]='abc';
+var_dump($b);
+echo count($b);
+echo '<hr>';
+$eric['age'] = 28;
+$eric['height'] = 180;
+$eric['name'] = 'Eric';
+$eric['gender'] = true;
+var_dump($eric);
+echo count($eric);
+echo '<hr>';
+$c=array(1,2,3,'gender'=>true);
+var_dump($c);
+echo count($c);
