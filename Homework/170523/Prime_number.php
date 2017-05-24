@@ -1,7 +1,7 @@
 <table width="100%" border="1">
     <tr>
         <?php
-        $total = 100;
+        $total = 10000;
         for ($i = 1; $i <= $total; $i++) {
             $n[$i] = $i;
         }
@@ -23,12 +23,12 @@
         function prime_number(int $num)
         {
             $prime = false;
-            if ($num == 2 || $num == 3) {
+            if ($num == 2 || $num == 3||$num == 5) {
                 $prime = true;
-            } elseif ($num % 2 == 0) {
+            } elseif ($num % 2 == 0||$num % 3 == 0||$num % 5 == 0) {
 
             } else {
-                for ($i = 3; $i <= (int)($num / 2); $i += 2) {
+                for ($i = 11; $i <= (int)($num / 2); $i += 2) {
                     if ($num % $i == 0) {
                         $prime = false;
                         break;
