@@ -1,17 +1,5 @@
 <?php
-class Bike{
-    private $speed;
-    function upSpeed($gear=1){
-        $this ->speed = ($this->speed<1)?1:($this->speed)*1.2*$gear;
-    }
-    function downSpeed(){
-        $this ->speed = ($this->speed<1)?0:($this->speed)*0.6;
-    }
-    function getSpeed(){
-        return $this->speed;
-    }
-}
-
+include "eric_api.php";
 $myBike = new Bike();
 $urBike = new Bike();
 for ($i=0;$i<rand(1,9);$i++)
@@ -25,4 +13,9 @@ for ($i=0;$i<rand(1,2);$i++)
 
 echo "My speed:{$myBike->getSpeed()}<br>";
 echo "Ur speed:{$urBike->getSpeed()}<br>";
+echo "<hr>";
 
+$myScooter = new Scooter();
+$myScooter ->upSpeed();
+
+echo "myScooter speed = {$myScooter->getSpeed()}";
