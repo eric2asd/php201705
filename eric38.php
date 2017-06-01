@@ -1,6 +1,6 @@
 <?php
 session_start();
-$db = new mysqli('127.0.0.1', 'root', 'root', 'iii');
+$db = @new mysqli('127.0.0.1', 'root', 'root', 'iii');
 $_SESSION['db'] = $db;
 if (isset($_GET['delid'])) {
     $delid = $_GET['delid'];

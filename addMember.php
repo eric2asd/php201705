@@ -2,7 +2,7 @@
     session_start();
     if(isset($_GET['account'])){
         $account = $_GET['account'];
-        $passwd = $_GET['passwd'];
+        $passwd = password_hash($_GET['passwd'],PASSWORD_DEFAULT);
         $realname = $_GET['realname'];
         $sql ="insert into member (account,passwd,realname) values ('{$account}','{$passwd}','{$realname}')";
         $db = new mysqli('127.0.0.1','root','root','iii');
