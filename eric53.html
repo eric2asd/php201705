@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        $(function () {
+                    setInterval(doit, 1000);
+        });
+        function doit() {
+            $.get("eric54.php", function (data, status) {
+                if (status = "success") {
+                    $("#here").html(data);
+                }
+            })
+        }
+
+
+    </script>
+</head>
+<body>
+<!--<input type="button" id="click" value="test">-->
+<div id="here"></div>
+</body>
+</html>
